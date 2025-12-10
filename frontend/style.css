@@ -1,0 +1,233 @@
+/* ------------------------------
+   GLOBAL STYLING
+------------------------------ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background: #0d0d0d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ------------------------------
+   LAYOUT: SIDEBAR + APP
+------------------------------ */
+.main-layout {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    gap: 20px;
+}
+
+/* ------------------------------
+   LEFT SIDEBAR
+------------------------------ */
+.sidebar {
+    width: 260px;
+    height: 100%;
+    background: #141414;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.sidebar-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #00eaff;
+    margin-bottom: 15px;
+}
+
+.new-session-btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background: #00eaff;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 15px;
+    transition: 0.2s;
+}
+
+.new-session-btn:hover {
+    background: #00bcd4;
+}
+
+/* Session list items */
+.session-item {
+    background: #1e1e1e;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 14px;
+}
+
+.session-item:hover {
+    background: #272727;
+    transform: translateX(3px);
+}
+
+.active-session {
+    background: #00eaff !important;
+    color: black;
+    font-weight: bold;
+}
+
+/* ------------------------------
+   CHAT APP (RIGHT SIDE)
+------------------------------ */
+.app-container {
+    width: 100%;
+    height: 100%;
+    background: #111;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    color: #00eaff;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+/* ------------------------------
+   CHAT BOX
+------------------------------ */
+.chat-box {
+    flex: 1;
+    background: #1a1a1a;
+    border-radius: 14px;
+    padding: 20px;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+/* ------------------------------
+   MESSAGE BUBBLES
+------------------------------ */
+.user-msg, .bot-msg {
+    max-width: 70%;
+    padding: 10px 14px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.user-msg {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+}
+
+.bot-msg {
+    background: #2b2b2b;
+    color: #76ffb2;
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ------------------------------
+   SPEAKER BUTTON
+------------------------------ */
+.speak-btn {
+    margin-left: 10px;
+    background: rgba(255,255,255,0.15);
+    border: none;
+    border-radius: 8px;
+    padding: 5px 8px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #00faff;
+    transition: 0.2s;
+}
+
+.speak-btn:hover {
+    background: rgba(0,255,255,0.3);
+    transform: scale(1.1);
+}
+
+/* ------------------------------
+   BOTTOM INPUT + SEND
+------------------------------ */
+.input-container {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background: #2a2a2a;
+    color: white;
+    font-size: 16px;
+}
+
+#send-btn {
+    padding: 14px 25px;
+    background: #00eaff;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#send-btn:hover {
+    background: #00bcd4;
+}
+
+/* ------------------------------
+   ANIMATIONS
+------------------------------ */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.session-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.session-name {
+    flex: 1;
+}
+
+.session-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.session-actions button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #aaa;
+    transition: 0.2s;
+}
+
+.session-actions button:hover {
+    color: #00eaff;
+}

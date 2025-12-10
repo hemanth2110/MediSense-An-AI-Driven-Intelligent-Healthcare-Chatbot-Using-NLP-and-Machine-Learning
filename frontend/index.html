@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medisense 🤖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================
+     SESSION SIDEBAR (LEFT)
+============================ -->
+<div class="sidebar">
+    <h2>Sessions</h2>
+
+    <button class="new-session-btn">+ New Chat</button>
+
+    <div id="session-list"></div>
+</div>
+
+<!-- ============================
+     MAIN CHAT AREA
+============================ -->
+<div class="app-container">
+
+    <h1 class="title">Medisense 🤖</h1>
+
+    <div id="chat-box" class="chat-box"></div>
+
+    <div class="input-container">
+        <input id="user-input" type="text" placeholder="Type your message...">
+
+        <!-- 🎤 Speech-to-Text Button -->
+        <button id="mic-btn">🎤</button>
+
+        <button id="send-btn">Send</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
