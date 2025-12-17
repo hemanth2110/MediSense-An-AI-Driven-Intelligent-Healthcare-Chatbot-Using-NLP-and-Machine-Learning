@@ -5,21 +5,21 @@ The chatbot reduces the dependency on immediate physician availability by offeri
 With integrated authentication, the platform ensures safe usage, while advanced AI models continuously learn from user interactions to improve accuracy. MediSense ultimately aims to bridge the gap between users and healthcare information, promoting awareness, early detection, and better health management.
 
 ## Features
--Provides AI-driven medical query analysis using NLP and ML.
+*Provides AI-driven medical query analysis using NLP and ML.
 
--Offers symptom-based guidance and preliminary health recommendations.
+*Offers symptom-based guidance and preliminary health recommendations.
 
--Includes a user-friendly chat interface for seamless interaction.
+*Includes a user-friendly chat interface for seamless interaction.
 
--Ensures secure access and user data protection through authentication.
+*Ensures secure access and user data protection through authentication.
 
--Uses trained machine learning models to improve accuracy over time.
+*Uses trained machine learning models to improve accuracy over time.
 
--Supports integration of medical datasets for enhanced diagnosis understanding.
+*Supports integration of medical datasets for enhanced diagnosis understanding.
 
--Reduces response time and offers instant, reliable health assistance.
+*Reduces response time and offers instant, reliable health assistance.
 
--Encourages early detection and awareness through intelligent suggestions.
+*Encourages early detection and awareness through intelligent suggestions.
 
 ## Requirements
 *Operating System: Works best on Windows 10/11 or Linux for development and model deployment.
